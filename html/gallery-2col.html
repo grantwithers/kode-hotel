@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GALLERY 2</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Full Calender CSS -->
+	<link href="css/fullcalendar.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- SVG StyleSheet CSS -->
+	<link href="svg/style.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="css/widget.css" rel="stylesheet">
+	<!-- Typography CSS -->
+	<link href="css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="css/color.css" rel="stylesheet">
+	<!-- DATE PICKER CSS -->
+	<link href="css/datepicker.css" rel="stylesheet">
+	<!-- Effects CSS -->
+	<link href="css/effects.css" rel="stylesheet">
+	<!-- Slectric CSS -->
+	<link href="css/selectric.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--KF KODE WRAPPER WRAP START-->
+    <div class="kode_wrapper">
+        <!-- register Modal -->
+	    <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+	        <div class="modal-dialog">
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <div class="modal-content">
+	            	<!--SIGNIN AS USER START-->
+	                <div class="user-box">
+	                	<h2>Sign up as a User</h2>
+	                    <!--FORM FIELD START-->
+	                    <div class="form">
+	                        <div class="input-container">
+	                            <input type="text" placeholder="Name">
+	                            <i class="fa fa-user"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="text" placeholder="E-mail">
+	                            <i class="fa fa-envelope-o"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="password" placeholder="Password">
+	                            <i class="fa fa-unlock"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <label>
+	                                <span class="radio">
+	                                    <input type="checkbox" name="foo" value="1" checked>
+	                                    <span class="radio-value" aria-hidden="true"></span>
+	                                </span>
+	                                <span>Remember me</span>
+	                            </label>
+	                        </div>
+	                        <div class="input-container">
+	                            <button class="btn-style">Sign Up</button>
+	                        </div>
+	                    </div>
+	                    <!--FORM FIELD END-->
+	                </div>
+	                <!--SIGNIN AS USER END-->
+	                <div class="user-box-footer">
+	                    Already have an account? <a href="#">Sign In</a>
+	                </div>
+	                <div class="clearfix"></div>
+	            </div>
+	            <div class="clearfix"></div>
+	        </div>
+	    </div>
+	    <!-- register Modal end-->
+	    
+	    <!-- SIGNIN MODEL START -->
+	    <div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
+	        <div class="modal-dialog">
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <div class="modal-content">
+	                <div class="user-box">
+	                    <h2>Sign In</h2>
+	                    <!--FORM FIELD START-->
+	                    <div class="form">
+	                        <div class="input-container">
+	                            <input type="text" placeholder="E-mail">
+	                            <i class="fa fa-envelope-o"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="password" placeholder="Password">
+	                            <i class="fa fa-unlock"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <label>
+	                                <span class="radio">
+	                                    <input type="checkbox" name="foo" value="1" checked>
+	                                    <span class="radio-value" aria-hidden="true"></span>
+	                                </span>
+	                                <span>Remember me</span>
+	                            </label>
+	                        </div>
+	                        <div class="input-container">
+	                            <button class="btn-style">Sign In</button>
+	                        </div>
+	                    </div>
+	                    <!--FORM FIELD END-->
+	                </div>
+	                <div class="user-box-footer">
+	                    <p>Don't have an account?<br><a href="#">Sign up as a User</a></p>
+	                </div>
+	                <div class="clearfix"></div>
+	            </div>
+	            <div class="clearfix"></div>
+	        </div>
+	    </div>
+	    <!-- SIGNIN MODEL END -->
+    	<!--HEADER START-->
+    	<header>
+    		<!--KF HOTEL TOP BAR START-->
+    		<div class="kf-top-bar">
+    			<div class="container">
+    				<div class="pull-left">
+    					<ul>
+    						<li><i class="fa fa-envelope"></i><a href="Info@kodeforest.com">Info@kodeforest.com</a></li>
+    						<li><i class="fa fa-phone"></i>+ 369 456 789</li>
+    					</ul>
+    				</div>
+    				<div class="pull-right login_wrap">
+    					<ul>
+    						<li><a href="#" data-toggle="modal" data-target="#signin-box"><i class="fa fa-user"></i>Login</a></li>
+    						<li><a href="#" data-toggle="modal" data-target="#reg-box"><i class="fa fa-user"></i>Register</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+			<!--KF HOTEL TOP BAR END-->
+			<!--KF HOTEL NAVIGATION BAR START-->
+			<div class="kf-navigation-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<!--KF HOTEL LOGO START-->
+							<div class="kf-logo">
+								<a href="#"><img src="images/logo.png" alt=""></a>
+							</div>
+							<!--KF HOTEL LOGO END-->
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<!--KF HOTEL NAV START-->
+							<div class="kf-nav">
+								<div  id="nav-main">
+									<ul>
+										<li><a href="index.html">home</a></li>
+										<li><a href="aboutus.html">About Us</a></li>
+										
+										<li><a href="#">Blog</a>
+											<ul>
+												<li><a href="blogdetails.html">blog details</a></li>
+												<li><a href="bloglist.html">blog list</a></li>	
+												<li><a href="blog2.html">blog 2 col</a></li>	
+												<li><a href="blog3.html">blog 3 col</a></li>	
+												<li><a href="blog4.html">blog 4 col</a></li>	
+												<li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+												<li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+											</ul>
+										</li>
+										<li><a href="ourroom.html">Rooms</a>
+											<ul>
+												<li><a href="roomgrid.html">room grid</a></li>
+												<li><a href="ourroom.html">our room</a>
+												<li><a href="our-servicess.html">our srevices</a>
+											</ul>
+										</li>
+										<li><a href="#">Pages</a>
+											<ul>
+												<li><a href="mesonery-gallery.html">Mesonery gallery</a></li>
+												<li><a href="gallery-2col.html">gallery 2 col</a></li>
+												<li><a href="gallery-3col.html">gallery 3 col</a></li>
+												<li><a href="gallery-4col.html">gallery 4 col</a></li>
+												<li><a href="coming-soon.html">Coming Soon</a></li>
+												<li><a href="404.html">404</a></li>
+											</ul>
+										</li>
+										<li><a href="contactus.html">Contact Us</a></li>
+									</ul>
+									<!--Responsive Menu END-->
+				                    <div id="nav-trigger">
+									   <nav id="nav-mobile"><span class="fa fa-bars"></span></nav> 
+									</div>
+								</div>
+
+			                    
+								
+								<!--KF HOTEL SEARCH WRAP START-->
+								<div class="kf-nav-search">
+									
+									<div class="searchlink">
+									    <i class="fa fa-search show"></i>
+									    <div class="searchform">
+									      <form>
+									        <input type="text" placeholder="keywords...">
+									      </form>
+									    </div>
+									</div>
+									<a href="#" class="small-btn">Book Now</a>
+								</div>
+								<!--KF HOTEL SEARCH WRAP END-->
+							</div>
+							<!--KF HOTEL NAV END-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--KF HOTEL NAVIGATION BAR END-->
+		</header>
+		<!--HEADER END-->
+			<!--HOME PAGE BANNER START-->
+		<div class="kf-home-banner inner-banner">
+			<div class="container">
+				<h3>Gallery-2</h3>
+				<span><i class="icon-hotel"></i></span>
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery-2.html">Gallery-2</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--HOME PAGE BANNER END-->
+
+		<div class="kf_content_wrap">
+			<!--GALLERY  SECTION START-->
+			<section class="kf-gallery-wrap galler-2-wrap" id="filters">
+				<div class="gallery-2-nav">
+					<div class="button-group js-radio-button-group">
+						<button class="button is-checked" data-filter="">All</button>
+						<button class="button" data-filter=".Spa">Spa</button>
+						<button class="button" data-filter=".Cafe">Cafe</button>
+						<button class="button" data-filter=".Restaurant">Restaurant</button>
+						<button class="button" data-filter=".Gym">Gym</button>
+						<button class="button" data-filter=".Hotel">Hotel</button>
+					</div>
+				</div>
+
+				<div class="isotope">
+					<div class="col-md-6 col-sm-6 color-shape small Spa Gym">
+						<div class="hotel-masonery-thumb">
+							<img src="extra-images/gallery1-thumb1.jpg" alt=""/>
+							<div class="text">
+								<h6>Awesome Gallery</h6>
+								<ul class="kf-staff-social">
+	 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	 							</ul>
+							</div>
+							<div class="top-effect"></div>
+							<div class="bottom-effect"></div>
+						</div>	
+					</div>
+
+					<div class="col-md-6 col-sm-6 color-shape small Restaurant Spa Gym">
+						<div class="hotel-masonery-thumb">
+							<img src="extra-images/gallery1-thumb2.jpg" alt=""/>
+							<div class="text">
+								<h6>Awesome Gallery</h6>
+								<ul class="kf-staff-social">
+	 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	 							</ul>
+							</div>
+							<div class="top-effect"></div>
+							<div class="bottom-effect"></div>
+						</div>	
+					</div>
+
+					<div class="col-md-6 col-sm-6 color-shape wide Spa Cafe">
+						<div class="hotel-masonery-thumb">
+							<img src="extra-images/gallery1-thumb3.jpg" alt=""/>
+							<div class="text">
+								<h6>Awesome Gallery</h6>
+								<ul class="kf-staff-social">
+	 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	 							</ul>
+							</div>
+							<div class="top-effect"></div>
+							<div class="bottom-effect"></div>
+						</div>	
+					</div>
+
+					<div class="col-md-6 col-sm-6 color-shape small Hotel">
+						<div class="hotel-masonery-thumb">
+							<img src="extra-images/gallery1-thumb4.jpg" alt=""/>
+							<div class="text">
+								<h6>Awesome Gallery</h6>
+								<ul class="kf-staff-social">
+	 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	 							</ul>
+							</div>
+							<div class="top-effect"></div>
+							<div class="bottom-effect"></div>
+						</div>	
+					</div>
+
+					<div class="col-md-6 col-sm-6 color-shape small Restaurant">
+						<div class="hotel-masonery-thumb">
+							<img src="extra-images/gallery1-thumb5.jpg" alt=""/>
+							<div class="text">
+								<h6>Awesome Gallery</h6>
+								<ul class="kf-staff-social">
+	 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	 							</ul>
+							</div>
+							<div class="top-effect"></div>
+							<div class="bottom-effect"></div>
+						</div>	
+					</div>
+
+					<div class="col-md-6 col-sm-6 color-shape wide Cafe Spa Gym Hotel">
+						<div class="hotel-masonery-thumb">
+							<img src="extra-images/gallery1-thumb6.jpg" alt=""/>
+							<div class="text">
+								<h6>Awesome Gallery</h6>
+								<ul class="kf-staff-social">
+	 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	 							</ul>
+							</div>
+							<div class="top-effect"></div>
+							<div class="bottom-effect"></div>
+						</div>	
+					</div>
+
+
+				</div>
+				<a class="large-btn shadow-shadow" href="#">View Full Gallery</a>
+			</section>
+			<!--GALLERY  SECTION END-->
+		</div>
+		<!--FOOTER START-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="widget">
+							<h5>About Hotel</h5>
+							<div class="text">
+								<p>Etiam pharetra erat sed fermentum feugiat  velit mauri s egestas quam fermentum feugiat velit mauris. </p>
+								<h5>Subcribe</h5>
+								<form>
+									<input type="text" placeholder="Info@info.com">
+									<button><i class="fa fa-envelope"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget widget-twitter">
+							<h5>Latest Tweets</h5>
+							<ul>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<p>Etiam pharetra erat sed fermentum feugiat  velit mauri s egestas quam fermentum feugiat velit mauris. </p>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<p>Etiam pharetra erat sed fermentum feugiat  velit mauri s egestas quam fermentum feugiat velit mauris. </p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget widget-instagram">
+							<h5>Instagram</h5>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb1.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb2.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb3.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb4.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb5.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb6.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb7.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb8.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--COPYRIGHTS START-->
+				<div class="kf_copyright_wrap">
+					
+					<ul class="kf-footer-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Packages</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+
+					<ul class="kf-footer-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype"></i></a></li>
+					</ul>
+				</div>
+				<!--COPYRIGHTS START-->
+			</div>
+			
+		</footer>
+		<!--FOOTER END-->
+		
+    </div>
+    <!--KF KODE WRAPPER WRAP END-->
+	<!--Bootstrap core JavaScript-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Map-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="js/jquery-filterable.js"></script>
+	<!--Accordian JavaScript-->
+	<script src="js/jquery.accordion.js"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="js/waypoints-min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- include Masonry -->
+	<script src="js/isotope.pkgd.min.js"></script> 
+	<script src="js/jquery.selectric.min.js"></script>
+	<!--Custom JavaScript-->
+	<script src="js/custom.js"></script>
+
+    
+</body>
+</html>

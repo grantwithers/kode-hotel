@@ -1,0 +1,687 @@
+
+/*
+=================================================
+			FROM 992PX TO 1199PX
+=================================================
+*/ 
+@media (min-width: 992px) and (max-width: 1199px) {
+	.kf-nav ul li{
+		padding:15px 11px 14px; 
+	}
+	.searchlink{
+		margin-right: 10px;
+	}
+	.kf_content-des .thumb figure figcaption{
+		padding: 3.5px 30px 7.5px;
+	}
+	.kf_content-des .thumb.overlay-thumb figcaption{
+		padding: 0 19px;
+	}
+	.kf_content-des .thumb figure figcaption span::before{
+		font-size: 0;
+	}
+	.kf_content-des .thumb.overlay-thumb figure figcaption span{
+		margin-bottom: -8px;
+	}
+	.kf-newsletter-meta li{
+		font-size: 28px;
+	}
+	.widget.widget-instagram ul{
+		margin-left: -5px;
+	}
+	.widget-instagram li {
+	    margin: 0 0 5px 5px;
+	    width: 66px;
+	}
+	/*about us*/
+	.kf-latest-artical .text{
+		margin-top: -130.5px;
+   		padding: 14px 25px 20px;
+	}
+	
+	.about_autor{
+		padding: 30px 25px;
+	}
+	/*blog detail*/
+	.related-post figure figcaption{
+		padding:13px 60px 14px 20px; 
+	}
+	.widget-tags ul{
+		margin: 0;
+	}
+	.widget-tags ul li a{
+		padding: 12px 11px;
+	}
+	/*blog 3 cloum*/
+	.blog3-meta{
+		padding: 12px 10px 11px;
+	}
+	.kf-blog-3 .text h5{
+		font-size: 22px;
+	}
+	.col-md-3 .blog3-meta span{
+		width: 100%;
+		text-align:center; 
+	}
+	.col-md-3 .text h5{
+		font-size: 18px;
+	}
+	.col-md-3 .kf-blog-3:hover .blog3-meta span{
+		opacity: 0;
+	}
+	.col-md-3 .blog3-meta ul {
+	    bottom: 0;
+	    height: 100%;
+	    left: 100%;
+	    line-height: 39px;
+	    padding: 0;
+	    position: absolute;
+	    right: 0;
+	    text-align: center;
+	    top: 0;
+	    vertical-align: middle;
+	}
+	.col-md-3 .kf-blog-3:hover .blog3-meta ul{
+		left: 0;
+	}
+	.col-md-3 .blog3-meta ul li:last-child a{
+		padding-right: 15px;
+	}
+	.blog3-meta ul li a{
+		padding:0 12px; 
+	}
+	/*room grid*/
+	.ka-grid-layout-wrap .kf-items-show.show-2 .selectric-wrapper{
+		width: 102px;
+	}
+	.ka-grid-layout-wrap .kf-items-show.show-2 .selectric .label{
+		padding:0 10px; 
+	}
+	.ka-grid-layout-wrap .kf-items-show.show-2 .selectric .button{
+		right: -7px;
+	}
+	.kf-room-grid .text{
+		padding:11px 29px 16px 0; 
+	}
+	.kf-room-grid .text h4{
+		margin-bottom: 14px;
+	}
+	.kf-room-grid .text p{
+		margin-bottom: 13px;
+	}
+	.room-grid-meta{
+		margin-bottom: 0;
+	}
+	.room-grid-meta li{
+		margin-bottom: 10px;
+	}
+	/*gallery 4 col*/
+	.galler-2-wrap.col-4 .bottom-effect, .top-effect{
+		height: 53px;
+	}
+	.galler-2-wrap.col-4 .hotel-masonery-thumb .text{
+		margin-top: -47px;
+	}
+	/*contact us*/
+	.kf-cont-heading{
+		padding:0 125px; 
+	}
+	.kf-cnt li i{
+		width: 97px;
+	}
+}
+/*
+=================================================
+			FROM 0PX TO 979PX
+=================================================
+*/ 
+@media (max-width: 991px) {
+	 
+	 #nav-trigger {
+    	display: block; 
+    }
+
+	  nav#nav-main {
+	    display: none;
+	}
+
+	  nav#nav-mobile {
+	    display: block; 
+		padding: 5px 0;
+	}
+
+
+	.kf-nav > #nav-main {
+	    float: right;
+	    margin-left: 10px;
+	}
+	.kf-nav ul{
+		display: none;
+	}
+	.kf-home-banner figure figcaption{
+		margin-top: -70px;
+	}
+	.searchlink{
+		margin-right: 0;
+	}
+	.searchform{
+		z-index: 99999;
+	}
+	.kf-home-banner figure figcaption p{
+		font-size: 22px;
+		line-height: 22px;
+		margin-bottom: 12px;
+	}
+	.kf-home-banner .rw-sentence span,
+	.kf-home-banner figure figcaption h2{
+		font-size: 36px;
+	}
+	.kf-home-banner .owl-theme .owl-controls .owl-buttons div{
+		height: 40px;
+		line-height: 40px;
+		width: 40px;
+		padding: 0;
+	}
+	.kf-home-banner .owl-theme .owl-controls .owl-buttons div:before{
+		font-size: 40px;
+	}
+	.kf-home-banner .owl-buttons{
+		margin: -24px 0px 0;
+	}
+	.kf-booking-shdule{
+		margin-bottom: 30px;
+		bottom: 0;
+	}
+	.kf_content-des .thumb figure figcaption{
+		padding-top: 59px;
+	}
+	.kf_content-des .thumb.overlay-thumb figcaption{
+		padding-top: 5px;
+	}
+	.tab-services-contant figure{
+		margin-bottom: 24px;
+	}
+	.kf-testimonial-des .text p{
+		padding:0 30px; 
+	}
+	.kf-newsletter-dec.des2,
+	.kf-newsletter-dec{
+		padding: 0;
+	}
+	.kf-newsletter-meta li{
+		font-size: 24px;
+	}
+	.kf-accomodation-dec{
+		margin-bottom: 30px;
+	}
+	.kf-newsletter-dec > span{
+		font-size: 50px;
+	}
+	.kf-price-tag figcaption span{
+		font-size: 43px;
+	}
+	.kf-price-tag figcaption span sup {
+	    font-size: 30px !important;
+	    margin-right: -7px;
+	    top: -11px;
+	}
+	.kf-price-tag figcaption span sub {
+	    bottom: 0;
+	    font-size: 18px !important;
+	}
+	.retail-meta{
+		padding:0; 
+	}
+	.retail-meta li {
+	    font-size: 14px;
+	    padding: 8px 0 9.54px;
+	}
+	.brand-info{
+		font-size: 18px;
+	}
+	footer .widget{
+		margin-bottom: 30px;
+	}
+	.kf-footer-nav li{
+		margin-right: 25px;
+	}
+	#owl-demo-2 .owl-buttons{
+		left: 0;
+		right: 0;
+	}
+	#owl-demo-2 .owl-controls .owl-buttons div,
+	#owl-demo-2 .owl-controls .owl-buttons div::before{
+		background-color: rgba(225, 225, 225, 0.3);
+	}
+	.kf-latest-artical .text {
+	    background-color: #fff;
+	    left: inherit;
+	    position: inherit;
+	    right: 0;
+	    width: inherit;
+	    margin-top: 0;
+	}
+	.kf-aboutus-wrap .text{
+		margin-bottom: 35px;
+	}
+	.blog-search{
+		margin-bottom: 40px;
+	}
+	.res-margin{
+		margin-bottom: 40px;
+	}
+	.widget.widget-instagram{
+		margin-bottom: 0;
+	}
+	.widget-instagram ul{
+		margin-bottom: -25px;
+	}
+	.kf-room-grid .text{
+		padding: 21px 29px 26px;
+	}
+	.kf-grid-icon > button{
+		padding:4px 11px 3px; 
+	}
+	.kf-items-show > span{
+		display: none;
+	}
+	.kf-items-show.show-2 .stor-by{
+		display: block;
+	}
+	.our-services{
+		padding-bottom: 0;
+	}
+	.galler-2-wrap .hotel-masonery-thumb .text{
+		margin-top: -50px;
+	}
+	.galler-2-wrap .bottom-effect, .top-effect{
+		height: 18px;
+	}
+	.galler-2-wrap.col-4 .bottom-effect, .top-effect{
+		height: 0;
+	}
+	.kf-cont-heading{
+		padding: 0 25px;
+	}
+	.overflow-contac p{
+		padding: 2.5px 0;
+	}
+	.kf-coming-soon-des > span{
+		font-size: 90px;
+		line-height: 90px;
+	}
+	.countdown li{
+		width: 100px;
+	}
+}
+/*
+=================================================
+			FROM 768PX TO 979PX
+=================================================
+*/
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  
+}
+/*
+=================================================
+			FROM 0PX TO 767PX
+=================================================
+*/
+@media (max-width: 767px) {
+	
+	.pull-left ul,
+	.pull-right ul{
+		text-align: center;
+	}
+	.kf-top-bar .pull-left ul li:first-child{
+		padding-left: 25px;
+	}
+	.kf-navigation-wrap .container{
+		position: relative;
+	}
+	.kf-navigation-wrap .col-md-9.col-sm-8{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.kf-home-banner figure figcaption{
+		margin-top: -8px;
+	}
+	.kf-home-banner figure figcaption p{
+		font-size: 16px;
+	}
+	.kf-home-banner .rw-sentence span, .kf-home-banner figure figcaption h2{
+		font-size: 20px;
+	}
+	.kf-booking-shdule{
+		position: relative;
+		margin:0; 
+	}
+	.kf-booking-shdule ul li {
+	    float: left;
+	    position: relative;
+	    width: 100%;
+	}
+	.kf-booking-shdule ul li.col-md-3::before{
+		width: 0;
+	}
+	.kf-booking-shdule ul li:last-child{
+		padding-left: 15px;
+	}
+	.date-picker-des{
+		width: 100%;
+	}
+	.kf-home-banner > span{
+		display: none;
+	}
+	.kf-home-banner #owl-demo-main{
+		z-index: 9999;
+	}
+	.kf_content-des .thumb figure figcaption {
+	    padding-top: 109px;
+	}
+	.kf_content-des .thumb.overlay-thumb figcaption {
+	    padding-top: 44px;
+	}
+	.nav.nav-tabs.tab-services > li{
+		float: left;
+		width: 25%;
+		margin:0; 
+	}
+	.nav.nav-tabs.tab-services > li a{
+		width: 100%;
+	}
+	.kf-testimonial-des .text p{
+		padding:0; 
+	}
+	.news-letter-bg::after{
+		background-image: none;
+		background-color: #333;
+	}
+	.kf-map{
+		display: none;
+	}
+	.kf-price-tag figcaption span{
+		font-size: 72px;
+	}
+	.kf-price-tag figcaption span sup {
+	    font-size: 47px;
+	    margin-right: -15px;
+	    top: -16px;
+	}
+	.kf-price-tag figcaption span sub{
+		font-size: 35px;
+	}
+	.retail-meta{
+		padding:68px 0 64px; 
+	}
+	.retail-meta li{
+		padding:15px 0 14px; 
+		font-size: 16px;
+	}
+	.kf-price-tag{
+		margin-bottom: 30px;
+	}
+	.kf-footer-nav{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.kf-footer-social{
+		width: 100%;
+		text-align: center;
+	}
+	.kf-footer-nav li{
+		margin-right: 20px;
+	}
+	.kf-footer-socialli:last-child,
+	.kf-footer-nav li:last-child{
+		margin: 0;
+	}
+	.kf-overflow-meta li:last-child{
+		display: none;
+	}
+	.about_autor .about-autor_des p{
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow: hidden;
+	}
+	.related-post figure{
+		margin-bottom: 30px;
+	}
+	.blog-search form .col-md-6.col-sm-6{
+		position: inherit;
+	}
+	.blog-search form input[type="text"]:last-child{
+		margin-bottom: 30px;
+	}
+	.kf-overflow h5{
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow: hidden;
+	}
+	.kf-items-show,
+	.kf-grid-icon{
+		margin-bottom: 30px;
+	}
+	.kf-items-show.show-2 .selectric-wrapper{
+		float: left;
+		padding-left: 0;
+	}
+	.kf-items-show.show-2{
+		margin-bottom: 0;
+	}
+	/**/
+	.contactus-wrap form{
+		margin-bottom: 30px;
+	}
+	.kf-cnt li:last-child{
+		margin-bottom: 0;
+	}
+	.kf-404-wrap h6{
+		font-size: 250px;
+	}
+	.kf-404-wrap h6 span{
+		font-size: 31px;
+		line-height: 79px;
+		margin-top: -44px;
+	}
+	.kf-404-wrap p{
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow: hidden;
+	}
+	.kf-coming-soon-des > span{
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.kf-coming-soon-des .countdown li{
+		width: 78px;
+	}
+	.kf-top-bar .pull-right ul li, .kf-top-bar .pull-left ul li, .kf-top-bar .pull-left ul li:first-child{
+		padding: 10px;
+	}
+	.kf-top-bar .pull-right ul li a, .kf-top-bar .pull-left ul li a{
+		font-size: 14px;
+	}
+	.kf-top-bar .pull-right ul li i, .kf-top-bar .pull-left ul li i{
+		display: none;
+
+	}
+	.inner-banner{
+	 	padding: 36px 0px;
+	}
+
+
+}
+/*
+=================================================
+			FROM 0PX TO 0PX
+=================================================
+*/
+@media (max-width: 480px) {
+	.kf-nav-search .small-btn{
+		display: none;
+	}
+	.kf-home-banner .rw-sentence span, .kf-home-banner figure figcaption h2{
+		display: none;
+	}
+	.kf-home-banner figure figcaption{
+		margin-top: 0;
+	}
+	.kf-home-banner .owl-buttons{
+		bottom: 0;
+		top: inherit;
+		margin-top: 0;
+	}
+	.kf_content-des .thumb figure figcaption {
+	    padding-top: 51px;
+	}
+	.kf_content-des .thumb figure figcaption p{
+		display: none;
+	}
+	.kf_content-des .thumb.overlay-thumb figcaption {
+	    padding-top: 12px;
+	}
+	.nav.nav-tabs.tab-services > li{
+		width: 50%;
+	}
+	.tab-services-contant{
+		padding: 15px 0;
+	}
+	.kf-messonery-gallery .button-group.js-radio-button-group .button{
+		padding: 0 6px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.kf-staff-thumb:hover .kf-overlay p{
+		margin-bottom: 24px;
+	}
+	.kf-newsletter-meta li{
+		font-size: 21px;
+	}
+	.retail-meta{
+		padding: 0;
+	}
+	.retail-meta li{
+		padding: 13px 0 12px;
+	}
+	.kf_copyright_wrap{
+		padding: 29px 0 30px;
+	}
+	.kf-footer-social,
+	.kf-footer-nav{
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.kf-footer-nav{
+		margin-bottom: 30px;
+	}
+	.kf-footer-social li,
+	.kf-footer-nav li{
+		margin: 0 0; 
+		float: left;
+		padding: 0 8px;
+		text-align: center;
+	}
+	.kf-artical-meta li{
+		display: block;
+		width: 100%;
+		margin: 0 0 15px 0;
+	}
+	.kf-overflow{
+		margin-bottom: 40px;
+
+	}
+	.kf-bloglist-heading{
+		position: relative;
+	}
+	.kf-bloglist-heading .kf-overflow-meta{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -10px;
+		text-align: center;
+	}
+	.kf-bloglist-heading .kf-overflow-meta li,
+	.kf-overflow-meta li{
+		margin-right: 8px;
+	}
+	.kf-bloglist-heading .kf-overflow-meta li i,
+	.kf-blog-detail .kf-overflow-meta li i{
+		margin-right: 5px;
+	}
+	.social-links li{
+		margin: 0 0 0 10px;
+	}
+	.about_autor{
+		padding: 15px;
+	}
+	.kf-pagination .pagination li{
+		margin-right: 2px;
+	}
+	.blog3-meta ul li a{
+		padding: 0 9px;
+	}
+	.inner-banner h3{
+		font-size:23px; 
+	}
+	.retail{
+		text-align: center;
+	}
+	.room-grid-retail span{
+		margin-bottom: 25px;
+	}
+	.room-grid-retail .btn-3{
+		float: none;
+	}
+	.kf-gallery-wrap.galler-2-wrap .gallery-2-nav .button-group.js-radio-button-group .button{
+		margin-bottom: 20px;
+	}
+	.kf-gallery-wrap.galler-2-wrap .gallery-2-nav{
+		margin-bottom: 20px;
+	}
+	.kf-404-wrap h6 {
+	    font-size: 169px;
+	}
+	.kf-404-wrap h6 span {
+	    font-size: 25px;
+	    line-height: 41px;
+	    margin-top: -29px;
+	}
+	.kf-404-wrap h5{
+		font-size: 35px;
+	}
+	.kf-404-wrap form{
+		width: 250px;
+	}
+	.kf-coming-soon-des > span {
+	    font-size: 42px;
+	    line-height: 42px;
+	}
+	.kf-coming-soon-des > h5{
+		font-size: 20px;
+	}
+	.kf-coming-soon-des .countdown{
+		float: left;
+		width: 100%;
+		margin: 0;
+	}
+	.kf-coming-soon-des .countdown li {
+	    float: left;
+	    margin: 0 0 30px;
+	    width: 20%;
+	    height: 100px;
+	}
+	.kf-coming-soon-des .countdown li span{
+		font-size: 23px;
+		line-height: 23px;
+	}
+	.kf-coming-soon-des .countdown li p{
+		font-size: 11px;
+	}
+}
+
+

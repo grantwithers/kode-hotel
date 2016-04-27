@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>HOTEL</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Full Calender CSS -->
+	<link href="css/fullcalendar.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- SVG StyleSheet CSS -->
+	<link href="svg/style.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="css/widget.css" rel="stylesheet">
+	<!-- Typography CSS -->
+	<link href="css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="css/color.css" rel="stylesheet">
+	<!-- DATE PICKER CSS -->
+	<link href="css/datepicker.css" rel="stylesheet">
+	<!-- Effects CSS -->
+	<link href="css/effects.css" rel="stylesheet">
+	<!-- Slectric CSS -->
+	<link href="css/selectric.css" rel="stylesheet">
+	<!-- DL Menu CSS -->
+	<link href="js/dl-menu/component.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--KF KODE WRAPPER WRAP START-->
+    <div class="kode_wrapper">
+        <!-- register Modal -->
+	    <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+	        <div class="modal-dialog">
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <div class="modal-content">
+	            	<!--SIGNIN AS USER START-->
+	                <div class="user-box">
+	                	<h2>Sign up as a User</h2>
+	                    <!--FORM FIELD START-->
+	                    <div class="form">
+	                        <div class="input-container">
+	                            <input type="text" placeholder="Name">
+	                            <i class="fa fa-user"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="text" placeholder="E-mail">
+	                            <i class="fa fa-envelope-o"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="password" placeholder="Password">
+	                            <i class="fa fa-unlock"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <label>
+	                                <span class="radio">
+	                                    <input type="checkbox" name="foo" value="1" checked>
+	                                    <span class="radio-value" aria-hidden="true"></span>
+	                                </span>
+	                                <span>Remember me</span>
+	                            </label>
+	                        </div>
+	                        <div class="input-container">
+	                            <button class="btn-style">Sign Up</button>
+	                        </div>
+	                    </div>
+	                    <!--FORM FIELD END-->
+	                </div>
+	                <!--SIGNIN AS USER END-->
+	                <div class="user-box-footer">
+	                    Already have an account? <a href="#">Sign In</a>
+	                </div>
+	                <div class="clearfix"></div>
+	            </div>
+	            <div class="clearfix"></div>
+	        </div>
+	    </div>
+	    <!-- register Modal end-->
+	    
+	    <!-- SIGNIN MODEL START -->
+	    <div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
+	        <div class="modal-dialog">
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <div class="modal-content">
+	                <div class="user-box">
+	                    <h2>Sign In</h2>
+	                    <!--FORM FIELD START-->
+	                    <div class="form">
+	                        <div class="input-container">
+	                            <input type="text" placeholder="E-mail">
+	                            <i class="fa fa-envelope-o"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <input type="password" placeholder="Password">
+	                            <i class="fa fa-unlock"></i>
+	                        </div>
+	                        <div class="input-container">
+	                            <label>
+	                                <span class="radio">
+	                                    <input type="checkbox" name="foo" value="1" checked>
+	                                    <span class="radio-value" aria-hidden="true"></span>
+	                                </span>
+	                                <span>Remember me</span>
+	                            </label>
+	                        </div>
+	                        <div class="input-container">
+	                            <button class="btn-style">Sign In</button>
+	                        </div>
+	                    </div>
+	                    <!--FORM FIELD END-->
+	                </div>
+	                <div class="user-box-footer">
+	                    <p>Don't have an account?<br><a href="#">Sign up as a User</a></p>
+	                </div>
+	                <div class="clearfix"></div>
+	            </div>
+	            <div class="clearfix"></div>
+	        </div>
+	    </div>
+	    <!-- SIGNIN MODEL END -->
+    	<!--HEADER START-->
+    	<header>
+    		<!--KF HOTEL TOP BAR START-->
+    		<div class="kf-top-bar">
+    			<div class="container">
+    				<div class="pull-left">
+    					<ul>
+    						<li><i class="fa fa-envelope"></i><a href="Info@kodeforest.com">Info@kodeforest.com</a></li>
+    						<li><i class="fa fa-phone"></i>+ 369 456 789</li>
+    					</ul>
+    				</div>
+    				<div class="pull-right login_wrap">
+    					<ul>
+    						<li><a href="#" data-toggle="modal" data-target="#signin-box"><i class="fa fa-user"></i>Login</a></li>
+    						<li><a href="#" data-toggle="modal" data-target="#reg-box"><i class="fa fa-user"></i>Register</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+			<!--KF HOTEL TOP BAR END-->
+			<!--KF HOTEL NAVIGATION BAR START-->
+			<div class="kf-navigation-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<!--KF HOTEL LOGO START-->
+							<div class="kf-logo">
+								<a href="#"><img src="images/logo.png" alt=""></a>
+							</div>
+							<!--KF HOTEL LOGO END-->
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<!--KF HOTEL NAV START-->
+							<div class="kf-nav">
+								<div  id="nav-main">
+									<ul>
+										<li><a href="index.html">home</a></li>
+										<li><a href="aboutus.html">About Us</a></li>
+										
+										<li><a href="#">Blog</a>
+											<ul>
+												<li><a href="blogdetails.html">blog details</a></li>
+												<li><a href="bloglist.html">blog list</a></li>	
+												<li><a href="blog2.html">blog 2 col</a></li>	
+												<li><a href="blog3.html">blog 3 col</a></li>	
+												<li><a href="blog4.html">blog 4 col</a></li>	
+												<li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+												<li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+											</ul>
+										</li>
+										<li><a href="ourroom.html">Rooms</a>
+											<ul>
+												<li><a href="roomgrid.html">room grid</a></li>
+												<li><a href="ourroom.html">our room</a>
+												<li><a href="our-servicess.html">our srevices</a>
+											</ul>
+										</li>
+										<li><a href="#">Pages</a>
+											<ul>
+												<li><a href="mesonery-gallery.html">Mesonery gallery</a></li>
+												<li><a href="gallery-2col.html">gallery 2 col</a></li>
+												<li><a href="gallery-3col.html">gallery 3 col</a></li>
+												<li><a href="gallery-4col.html">gallery 4 col</a></li>
+												<li><a href="coming-soon.html">Coming Soon</a></li>
+												<li><a href="404.html">404</a></li>
+											</ul>
+										</li>
+										<li><a href="contactus.html">Contact Us</a></li>
+									</ul>
+									<!--Responsive Menu END-->
+				                    <div id="nav-trigger">
+									   <nav id="nav-mobile"><span class="fa fa-bars"></span></nav> 
+									</div>
+								</div>
+
+			                    
+								
+								<!--KF HOTEL SEARCH WRAP START-->
+								<div class="kf-nav-search">
+									
+									<div class="searchlink">
+									    <i class="fa fa-search show"></i>
+									    <div class="searchform">
+									      <form>
+									        <input type="text" placeholder="keywords...">
+									      </form>
+									    </div>
+									</div>
+									<a href="#" class="small-btn">Book Now</a>
+								</div>
+								<!--KF HOTEL SEARCH WRAP END-->
+							</div>
+							<!--KF HOTEL NAV END-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--KF HOTEL NAVIGATION BAR END-->
+		</header>
+		<!--HEADER END-->
+		<!--HOME PAGE BANNER START-->
+		<div class="kf-home-banner">
+			<div id="owl-demo-main" class="owl-carousel owl-theme">
+				<div class="item">
+					<figure>
+						<img src="extra-images/home-slider.jpg" alt=""/>
+						<figcaption>
+							<p>Welcome To Our Luxury Hotel</p>
+							<div class="rw-sentence">
+								<div class="rw-words rw-words-1">
+									<span>Book Your Holidays at Dream Location</span>
+									<span>Book Your Dream Resort Destinations</span>
+								</div>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="extra-images/home-slider-2.jpg" alt=""/>
+						<figcaption>
+							<p>Welcome To Our Luxury Hotel</p>
+							<h2>Book Your Holidays at<span> Dream </span>Location</h2>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="extra-images/home-slider-3.jpg" alt=""/>
+						<figcaption>
+							<p>Welcome To Our Luxury Hotel</p>
+							<h2>Book Your Holidays at<span> Dream </span>Location</h2>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="kf-booking-shdule">
+				<div class="container">
+					<form>
+						<ul>
+							<li class="col-md-3 col-sm-6">
+								<div class="date-picker-des" data-provide="datepicker">
+								    <input type="text" id="my-datepicker" class="basic" placeholder="Arrival Date">  
+									<span class="add-on"><i class="fa fa-calendar" id="cal2"></i></span>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6">
+								<div class="date-picker-des" data-provide="datepicker1">
+								    <input type="text" id="my-datepicker2" class="basic" placeholder="Departure Date">  
+									<span class="add-on"><i class="fa fa-calendar" id="cal3"></i></span>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6">
+						    	<select class="basic">
+                                    <option value="0">Number of People</option>
+                                    <option value="9">1 adult 1 room</option>
+                                    <option value="2">3 adult 1 room</option>
+                                    <option value="3">5 adult 2 room</option>
+                                    <option value="6">8 adult 2 room</option>
+                                    <option value="8">10 adult 3 room</option>
+                                </select>
+							</li>
+							<li class="col-md-3 col-sm-6">
+								<button class="medium-btn">Book Now<i class="fa fa-arrow-right"></i></button>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<span><i class="fa fa-angle-down"></i></span>
+		</div>
+		<!--HOME PAGE BANNER END-->
+
+		<div class="kf_content_wrap">
+			<!--SPECIAL OFFER SECTION START-->
+			<section class="kf-special-offer-wrap">
+				<div class="container">
+					<!--HEADING 1 START-->
+					<div class="col-md-12">
+						<div class="kf-heading-1">
+							<h3>Our Special Offers</h3>
+							<span><i class="icon-hotel"></i></span>
+						</div>
+					</div>
+					<ul class="bxslider">
+						<li>
+							<div class="kf_content-des">
+								<!--HEADING 1 END-->
+								<div class="col-md-4 col-sm-6">
+									<!--SPECIAL OFFER THUMB START-->
+									<div class="thumb">
+										<figure>
+											<img src="extra-images/offers1.jpg" alt="">
+											<figcaption>
+												<h3>Free Kids</h3>
+												<span>Special Offer</span>
+												<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+												<div class="kf-offer-price">
+													<small>From</small>
+													<strong>99<sup>$</sup></strong>
+													<a href="#" class="medium-btn">Book Now</a>
+												</div>
+											</figcaption>
+										</figure>
+									</div>
+									<!--SPECIAL OFFER THUMB END-->
+								</div>
+								<div class="col-md-8 col-sm-6">
+									<div class="col-md-6">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers2.jpg" alt="">
+							 					<span class="kf-thumb-heading">Groups & Entertainment</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+
+									<div class="col-md-6">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers3.jpg" alt="">
+							 					<span class="kf-thumb-heading">Outdoor Swimming Pool</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+
+									<div class="col-md-6 hidden-sm hidden-xs">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers4.jpg" alt=""/>
+							 					<span class="kf-thumb-heading">Gym & Sports</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+
+									<div class="col-md-6 hidden-sm hidden-xs">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers5.jpg" alt=""/>
+							 					<span class="kf-thumb-heading">Buffet & Restaurant</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="kf_content-des">
+								<!--HEADING 1 END-->
+								<div class="col-md-4 col-sm-6">
+									<!--SPECIAL OFFER THUMB START-->
+									<div class="thumb">
+										<figure>
+											<img src="extra-images/offers1.jpg" alt="">
+											<figcaption>
+												<h3>Free Kids</h3>
+												<span>Special Offer</span>
+												<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+												<div class="kf-offer-price">
+													<small>From</small>
+													<strong>99<sup>$</sup></strong>
+													<a href="#" class="medium-btn">Book Now</a>
+												</div>
+											</figcaption>
+										</figure>
+									</div>
+									<!--SPECIAL OFFER THUMB END-->
+								</div>
+								<div class="col-md-8 col-sm-6">
+									<div class="col-md-6">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers2.jpg" alt="">
+							 					<span class="kf-thumb-heading">Groups & Entertainment</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+
+									<div class="col-md-6">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers3.jpg" alt="">
+							 					<span class="kf-thumb-heading">Outdoor Swimming Pool</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+
+									<div class="col-md-6 hidden-sm hidden-xs">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers4.jpg" alt=""/>
+							 					<span class="kf-thumb-heading">Gym & Sports</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+									
+									<div class="col-md-6 hidden-sm hidden-xs">
+										<!--SPECIAL OFFER THUMB START-->
+							 			<div class="thumb overlay-thumb">
+							 				<figure>
+							 					<img src="extra-images/offers5.jpg" alt=""/>
+							 					<span class="kf-thumb-heading">Buffet & Restaurant</span>
+							 					<figcaption>
+							 						<h3>Free Kids</h3>
+							 						<span>Special Offer</span>
+							 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet nisi neque sed.</p>
+							 						<div class="kf-offer-price">
+							 							<small>From</small>
+							 							<strong>99<sup>$</sup></strong>
+							 							<a href="#" class="medium-btn">Book Now</a>
+							 						</div>
+							 					</figcaption>
+							 				</figure>
+							 			</div>
+							 			<!--SPECIAL OFFER THUMB END-->
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			 <!--SPECIAL OFFER SECTION END-->
+			 <!--OUR HOTEL SECTION START-->
+			<section class="kf-tab-services-wrap">
+				<div class="container">
+					<!--HEADING 1 START-->
+					<div class="col-md-12">
+						<div class="kf-heading-1">
+							<h3>Welcome To Our Hotel</h3>
+							<span><i class="icon-hotel"></i></span>
+						</div>
+					</div>
+					<!--HEADING 1 END-->
+					<div class="kf-tab-services">
+						<!-- Nav tabs -->
+					<ul class="nav nav-tabs tab-services" role="tablist">
+						<li role="presentation" class="active"><a href="#restaurant" aria-controls="restaurant" role="tab" data-toggle="tab">
+							<i class="icon-food"></i> Restaurant
+						</a></li>
+						<li role="presentation"><a href="#gym" aria-controls="gym" role="tab" data-toggle="tab">
+							<i class="icon-gym"></i> Gym
+						</a></li>
+						<li role="presentation"><a href="#pickUp" aria-controls="pickUp" role="tab" data-toggle="tab">
+							<i class="icon-transport"></i> Pick Up
+						</a></li>
+						<li role="presentation"><a href="#bar" aria-controls="bar" role="tab" data-toggle="tab">
+							<i class="icon-drink"></i> Bar
+						</a></li>
+					</ul>
+					<!-- Nav tabs end -->
+					<!-- Tab panes start-->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="restaurant">
+							<!-- TAB SERVICES CONTANT START-->
+							<div class="tab-services-contant">
+								<div class="col-md-5">
+									<figure>
+										<img src="extra-images/services-tab-1.jpg" alt="">
+									</figure>
+								</div>
+								<div class="col-md-7">
+									<!-- TAB TEXT START-->
+									<div class="text">
+										<span>The World Class</span>
+										<h5>Restaurant & Cafe</h5>
+										<p>Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. </p>
+										<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut . </p>
+										<!-- SERVICESS META START-->
+										<ul class="servises-meta">
+											<li>Service Hours; 19.00 - 22.00</li>
+											<li>Service Charges: $11</li>
+										</ul>
+										<!-- SERVICESS META END-->
+										<a href="#" class="small-btn shadow-shadow">See More Services</a>
+									</div>
+									<!-- TAB TEXT END-->
+								</div>
+							</div>
+							<!-- TAB SERVICES CONTANT END-->
+						</div>
+						<div role="tabpanel" class="tab-pane" id="gym">
+							<!-- TAB SERVICES CONTANT START-->
+							<div class="tab-services-contant">
+								<div class="col-md-5">
+									<figure>
+										<img src="extra-images/services-tab-2.jpg" alt="">
+									</figure>
+								</div>
+								<div class="col-md-7">
+									<!-- TAB TEXT START-->
+									<div class="text">
+										<span>The World Class</span>
+										<h5>gym</h5>
+										<p>Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.Sed ut imperdiet nisi. Proin condimentum fermentum nunc. </p>
+										<!-- SERVICESS META START-->
+										<ul class="servises-meta">
+											<li>Service Hours; 19.00 - 22.00</li>
+											<li>Service Charges: $11</li>
+										</ul>
+										<!-- SERVICESS META END-->
+										<a href="#" class="small-btn shadow-shadow">See More Services</a>
+									</div>
+									<!-- TAB TEXT END-->
+								</div>
+							</div>
+							<!-- TAB SERVICES CONTANT END-->
+						</div>
+						<div role="tabpanel" class="tab-pane" id="pickUp">
+							<!-- TAB SERVICES CONTANT START-->
+							<div class="tab-services-contant">
+								<div class="col-md-5">
+									<figure>
+										<img src="extra-images/services-tab-3.jpg" alt="">
+									</figure>
+								</div>
+								<div class="col-md-7">
+									<!-- TAB TEXT START-->
+									<div class="text">
+										<span>The World Class</span>
+										<h5>pick up</h5>
+										<p>Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. </p>
+										<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut . </p>
+										<!-- SERVICESS META START-->
+										<ul class="servises-meta">
+											<li>Service Hours; 19.00 - 22.00</li>
+											<li>Service Charges: $11</li>
+										</ul>
+										<!-- SERVICESS META END-->
+										<a href="#" class="small-btn shadow-shadow">See More Services</a>
+									</div>
+									<!-- TAB TEXT END-->
+								</div>
+							</div>
+							<!-- TAB SERVICES CONTANT END-->
+						</div>
+						<div role="tabpanel" class="tab-pane" id="bar">
+							<!-- TAB SERVICES CONTANT START-->
+							<div class="tab-services-contant">
+								<div class="col-md-5">
+									<figure>
+										<img src="extra-images/services-tab-4.jpg" alt="">
+									</figure>
+								</div>
+								<div class="col-md-7">
+									<!-- TAB TEXT START-->
+									<div class="text">
+										<span>The World Class</span>
+										<h5>bar</h5>
+										<p>Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.Sed ut imperdiet nisi. Proin condimentum fermentum nunc. </p>
+										<!-- SERVICESS META START-->
+										<ul class="servises-meta">
+											<li>Service Hours; 19.00 - 22.00</li>
+											<li>Service Charges: $11</li>
+										</ul>
+										<!-- SERVICESS META END-->
+										<a href="#" class="small-btn shadow-shadow">See More Services</a>
+									</div>
+									<!-- TAB TEXT END-->
+								</div>
+							</div>
+							<!-- TAB SERVICES CONTANT END-->
+						</div>
+					</div>
+					<!-- Tab panes end-->
+					</div>
+				</div>
+			</section>
+			 <!--OUR HOTEL SECTION END-->
+			<!--SPECIAL STAFF  SECTION START-->
+			<section>
+				<div class="container">
+					<!--HEADING 1 START-->
+					<div class="col-md-12">
+						<div class="kf-heading-1">
+							<h3> Our Special Staff</h3>
+							<span><i class="icon-hotel"></i></span>
+						</div>
+					</div>
+					<!--HEADING 1 END-->
+					<div class="row">
+						<div id="owl-demo-1" class="owl-carousel owl-theme">
+							<div class="item">
+								<!--STAFF THUMB START-->
+								<div class="kf-staff-thumb">
+				 					<figure>
+				 						<img src="extra-images/staff1.jpg" alt="">
+			 							<div class="kf-overlay">
+				 							<h5>ellen</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+				 							<a href="#">Read More</a>
+				 						</div>
+				 					</figure>
+				 				</div>
+				 				<!--STAFF THUMB END-->
+							</div>
+
+							<div class="item">
+								<!--STAFF THUMB START-->
+								<div class="kf-staff-thumb">
+				 					<figure>
+				 						<img src="extra-images/staff2.jpg" alt="">
+			 							<div class="kf-overlay">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+				 							<a href="#">Read More</a>
+				 						</div>
+				 					</figure>
+				 				</div>
+				 				<!--STAFF THUMB END-->
+							</div>
+
+							<div class="item">
+								<!--STAFF THUMB START-->
+								<div class="kf-staff-thumb">
+				 					<figure>
+				 						<img src="extra-images/staff3.jpg" alt="">
+			 							<div class="kf-overlay">
+				 							<h5>slena</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+				 							<a href="#">Read More</a>
+				 						</div>
+				 					</figure>
+				 				</div>
+				 				<!--STAFF THUMB END-->
+							</div>
+
+							<div class="item">
+								<!--STAFF THUMB START-->
+								<div class="kf-staff-thumb">
+				 					<figure>
+				 						<img src="extra-images/staff1.jpg" alt="">
+			 							<div class="kf-overlay">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 						<div class="kf-overlay overlay2">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 					</figure>
+				 				</div>
+				 				<!--STAFF THUMB END-->
+							</div>
+
+							<div class="item">
+								<!--STAFF THUMB START-->
+								<div class="kf-staff-thumb">
+				 					<figure>
+				 						<img src="extra-images/staff2.jpg" alt="">
+			 							<div class="kf-overlay">
+				 							<h5>slena</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 						<div class="kf-overlay overlay2">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 					</figure>
+				 				</div>
+				 				<!--STAFF THUMB END-->
+							</div>
+							<div class="item">
+								<!--STAFF THUMB START-->
+								<div class="kf-staff-thumb">
+				 					<figure>
+				 						<img src="extra-images/staff3.jpg" alt="">
+			 							<div class="kf-overlay">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 						<div class="kf-overlay overlay2">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 					</figure>
+				 				</div>
+				 				<!--STAFF THUMB END-->
+							</div>
+							<div class="item">
+								<!--STAFF THUMB START-->
+								<div class="kf-staff-thumb">
+				 					<figure>
+				 						<img src="extra-images/staff1.jpg" alt="">
+			 							<div class="kf-overlay">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 						<div class="kf-overlay overlay2">
+				 							<h5>Anna Doe</h5>
+				 							<ul class="kf-staff-social">
+				 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				 								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				 							</ul>
+				 							<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+				 							<a href="#">Read More<i class="fa fa-long-arrow-right"></i></a>
+				 						</div>
+				 					</figure>
+				 				</div>
+				 				<!--STAFF THUMB END-->
+							</div>	
+						</div>
+					</div>
+				</div>
+			</section>
+			 <!--SPECIAL STAFF  SECTION END-->
+			 <!--TESTIMONIAL  SECTION START-->
+			<section class="kf-testimonial-bg">
+				<div class="container">
+					<!--HEADING 1 START-->
+					<div class="col-md-12">
+						<div class="kf-heading-1">
+							<h3>Our Testimonial</h3>
+							<span><i class="icon-hotel"></i></span>
+						</div>
+					</div>
+					<!--HEADING 1 END-->
+					<div id="owl-demo-3" class="owl-carousel owl-theme">
+						<div class="item">
+							<!--TESTIMONIAL DES START-->
+							<div class="kf-testimonial-des">
+								<figure><img src="extra-images/testimonial1.jpg" alt=""></figure>
+								<div class="text">
+									<h5>Rebecca Doe</h5>
+									<em>Happy Customer</em>
+									<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet. Nemo enim ipsam voluptatem aspernatur aut odit aut fugit.</p>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</div>
+							<!--TESTIMONIAL DES END-->
+						</div>
+						<div class="item">
+							<!--TESTIMONIAL DES START-->
+							<div class="kf-testimonial-des">
+								<figure><img src="extra-images/testimonial1.jpg" alt=""></figure>
+								<div class="text">
+									<h5>Rebecca Doe</h5>
+									<em>Happy Customer</em>
+									<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet. Nemo enim ipsam voluptatem aspernatur aut odit aut fugit.</p>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</div>
+							<!--TESTIMONIAL DES END-->
+						</div>
+						<div class="item">
+							<!--TESTIMONIAL DES START-->
+							<div class="kf-testimonial-des">
+								<figure><img src="extra-images/testimonial1.jpg" alt=""></figure>
+								<div class="text">
+									<h5>Rebecca Doe</h5>
+									<em>Happy Customer</em>
+									<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet. Nemo enim ipsam voluptatem aspernatur aut odit aut fugit.</p>
+									<div class="rating">
+										<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+								</div>
+							</div>
+							<!--TESTIMONIAL DES END-->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--TESTIMONIAL  SECTION END-->
+			<!--HOTEL ROOMS  SECTION START-->
+			<section>
+			 	<div class="container">
+			 		<!--HEADING 1 START-->
+			 		<div class="col-md-12">
+			 			<div class="kf-heading-1">
+			 				<h3>Our Rooms</h3>
+			 				<span><i class="icon-hotel"></i></span>
+			 			</div>
+			 		</div>
+			 		<!--HEADING 1 END-->
+			 		<div class="row">
+			 			<div id="owl-demo-2" class="owl-carousel owl-theme">
+				 			<div class="item">
+				 				<!--HOTEL ROOM DEC START-->
+				 				<div class="kf-hotel-room">
+				 					<figure>
+				 						<img src="extra-images/room-1.jpg" alt="">
+				 						<div class="kf-room-rent">
+				 							<span>
+				 								<strong>$199</strong>
+				 								<small>Night</small>
+				 							</span>
+				 						</div>
+				 					</figure>
+				 					<h6><a href="#">Double Room</a></h6>
+				 				</div>
+				 				<!--HOTEL ROOM DEC END-->
+				 			</div>
+
+				 			<div class="item">
+				 				<!--HOTEL ROOM DEC START-->
+				 				<div class="kf-hotel-room">
+				 					<figure>
+				 						<img src="extra-images/room-2.jpg" alt="">
+				 						<div class="kf-room-rent">
+				 							<span>
+				 								<strong>$299</strong>
+				 								<small>Night</small>
+				 							</span>
+				 						</div>
+				 					</figure>
+				 					<h6><a href="#">Family Room</a></h6>
+				 				</div>
+				 				<!--HOTEL ROOM DEC END-->
+				 			</div>
+
+				 			<div class="item">
+				 				<!--HOTEL ROOM DEC START-->
+				 				<div class="kf-hotel-room">
+				 					<figure>
+				 						<img src="extra-images/room-3.jpg" alt="">
+				 						<div class="kf-room-rent">
+				 							<span>
+				 								<strong>$99</strong>
+				 								<small>Night</small>
+				 							</span>
+				 						</div>
+				 					</figure>
+				 					<h6><a href="#">Delux Room</a></h6>
+				 				</div>
+				 				<!--HOTEL ROOM DEC END-->
+				 			</div>
+
+				 			<div class="item">
+				 				<!--HOTEL ROOM DEC START-->
+				 				<div class="kf-hotel-room">
+				 					<figure>
+				 						<img src="extra-images/room-4.jpg" alt="">
+				 						<div class="kf-room-rent">
+				 							<span>
+				 								<strong>$229</strong>
+				 								<small>Night</small>
+				 							</span>
+				 						</div>
+				 					</figure>
+				 					<h6><a href="#">Luxury Room</a></h6>
+				 				</div>
+				 				<!--HOTEL ROOM DEC END-->
+				 			</div>
+
+				 			<div class="item">
+				 				<!--HOTEL ROOM DEC START-->
+				 				<div class="kf-hotel-room">
+				 					<figure>
+				 						<img src="extra-images/room-1.jpg" alt="">
+				 						<div class="kf-room-rent">
+				 							<span>
+				 								<strong>$239</strong>
+				 								<small>Night</small>
+				 							</span>
+				 						</div>
+				 					</figure>
+				 					<h6><a href="#">Double Room</a></h6>
+				 				</div>
+				 				<!--HOTEL ROOM DEC END-->
+				 			</div>
+
+				 			<div class="item">
+				 				<!--HOTEL ROOM DEC START-->
+				 				<div class="kf-hotel-room">
+				 					<figure>
+				 						<img src="extra-images/room-2.jpg" alt="">
+				 						<div class="kf-room-rent">
+				 							<span>
+				 								<strong>$39</strong>
+				 								<small>Night</small>
+				 							</span>
+				 						</div>
+				 					</figure>
+				 					<h6><a href="#">Luxury Room</a></h6>
+				 				</div>
+				 				<!--HOTEL ROOM DEC END-->
+				 			</div>
+				 		</div>
+			 		</div>
+			 	</div>
+			</section>
+			<!--HOTEL ROOMS  SECTION END-->
+			<!--NEWS LETTER  SECTION START-->
+			<section class="news-letter-bg">
+				<div class="kf-map">
+					<div id="map-canvas" class="map-canvas"></div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<!--NEWS LETTER  DEC START-->
+							<div class="kf-newsletter-dec">
+								<h3>Subcribe To</h3>
+								<span>Newsletter</span>
+								<form>
+									<input type="text" placeholder="Email Address">
+									<button><i class="fa fa-envelope"></i></button>
+								</form>
+								<p>Sed neque sed ut nisi neque sed ut urna eu felis sit amet.Spernatur aut odit aut fugit.</p>
+							</div>
+							<!--NEWS LETTER  DEC END-->
+						</div>
+						<div class="col-md-6 col-sm-6">
+						<!--NEWS LETTER  DEC START-->
+							<div class="kf-newsletter-dec des2">
+								<ul class="kf-newsletter-meta">
+									<li><i class="fa fa-mobile-phone"></i>9 (900) 465 789</li>
+									<li><i class="fa fa-map-marker"></i>New Town, 89st, Sydney</li>
+									<li><i class="fa fa-envelope"></i>Info@kodeforest.com</li>
+								</ul>
+							</div>
+						</div>
+						<!--NEWS LETTER  DEC END-->
+					</div>
+				</div>
+			</section>
+			<!--NEWS LETTER  SECTION END-->
+			<!--ACCOMODATION  SECTION START-->
+			<section>
+				<div class="container">
+					<!--HEADING 1 START-->
+			 		<div class="col-md-12">
+			 			<div class="kf-heading-1">
+			 				<h3>Accomodations</h3>
+			 				<span><i class="icon-hotel"></i></span>
+			 			</div>
+			 		</div>
+			 		<!--HEADING 1 END-->
+			 		<div class="row">
+			 			<div class="col-md-4 col-sm-6">
+			 				<!--ACCOMODATION START-->
+			 				<div class="kf-accomodation-dec">
+			 					<figure>
+			 						<img src="extra-images/acconodation-1.jpg" alt="">
+			 						<figcaption><a href="#"><i class="fa fa-link"></i></a></figcaption>
+			 					</figure>
+			 					<div class="text">
+			 						<h5><a href="#">Small Room</a></h5>
+			 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+			 					</div>
+			 				</div>
+			 				<!--ACCOMODATION END-->
+			 			</div>
+			 			<div class="col-md-4  col-sm-6">
+			 				<!--ACCOMODATION START-->
+			 				<div class="kf-accomodation-dec">
+			 					<figure>
+			 						<img src="extra-images/acconodation-2.jpg" alt="">
+			 						<figcaption><a href="#"><i class="fa fa-link"></i></a></figcaption>
+			 					</figure>
+			 					<div class="text">
+			 						<h5><a href="#">Double Room</a></h5>
+			 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+			 					</div>
+			 				</div>
+			 				<!--ACCOMODATION END-->
+			 			</div>
+			 			<div class="col-md-4  hidden-sm">
+			 				<!--ACCOMODATION START-->
+			 				<div class="kf-accomodation-dec">
+			 					<figure>
+			 						<img src="extra-images/acconodation-3.jpg" alt="">
+			 						<figcaption><a href="#"><i class="fa fa-link"></i></a></figcaption>
+			 					</figure>
+			 					<div class="text">
+			 						<h5><a href="#">Apartment</a></h5>
+			 						<p>Nullam ac urna eu felis sit amet a augue. Sed neque sed ut nisi neque sed ut urna eu felis sit amet.</p>
+			 					</div>
+			 				</div>
+			 				<!--ACCOMODATION END-->
+			 			</div>
+			 		</div>
+				</div>
+			</section>
+			<!--ACCOMODATION  SECTION END-->
+			<!--GALLERY  SECTION START-->
+			<section class="kf-gallery-wrap" id="filters">
+				<!--HEADING 1 START-->
+		 		<div class="col-md-12">
+		 			<div class="kf-heading-1">
+		 				<h3>Our Gallery</h3>
+		 				<span><i class="icon-hotel"></i></span>
+		 			</div>
+		 		</div>
+		 		<!--HEADING 1 END-->
+				<div class="kf-messonery-gallery gallery">
+					<span>Filter: </span>
+					<div class="button-group js-radio-button-group">
+						<button class="button is-checked" data-filter="">All</button>
+						<button class="button" data-filter=".Spa">Spa</button>
+						<button class="button" data-filter=".Cafe">Cafe</button>
+						<button class="button" data-filter=".Restaurant">Restaurant</button>
+						<button class="button" data-filter=".Gym">Gym</button>
+						<button class="button" data-filter=".Hotel">Hotel</button>
+					</div>
+				</div>
+
+				<div class="isotope">
+					<div class="col-md-2 col-sm-4 color-shape small Spa Gym">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb1.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-4 color-shape small Restaurant Spa Gym">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb2.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 color-shape wide Spa Cafe">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb3.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-4 color-shape small Hotel">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb4.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-4 color-shape small Restaurant">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb5.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 color-shape wide Cafe Spa Gym Hotel">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb6.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 color-shape wide Restaurant Cafe Spa Gym">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb8.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 color-shape wide Cafe Restaurant Hotel">
+						<div class="filterable-thumb">
+							<img src="extra-images/masonry_thumb7.jpg" alt=""/>
+							<a class="thumb-link" href="#">Its Your Time</a>
+							<div class="rating">
+								<a class="search-icon" href="#"> <i class="fa fa-search"></i></a>
+								<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+								<a class="link-icon" href="#"><i class="fa fa-link"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="large-btn" href="#">View Full Gallery</a>
+			</section>
+			<!--GALLERY  SECTION END-->
+			<!--PRICEING  SECTION START-->
+			<section>
+				<div class="container">
+					<div class="row">
+						<!--HEADING 1 START-->
+				 		<div class="col-md-12">
+				 			<div class="kf-heading-1">
+				 				<h3> Our Pricing</h3>
+				 				<span><i class="icon-hotel"></i></span>
+				 			</div>
+				 		</div>
+				 		<!--HEADING 1 END-->
+				 		<div class="col-md-4 col-sm-4">
+				 			<!--PRICE TAG START-->
+				 			<div class="kf-price-tag">
+				 				<div class="price-tag-heading">
+				 					<h5>luxury rooms</h5>
+				 					<p>Special Services</p>
+				 				</div>
+				 				<figure>
+				 					<img src="extra-images/price-tag.jpg" alt=""/>
+				 					<figcaption>
+				 						<div class="retail">
+				 							<span>
+				 								<sup>$</sup>
+				 								99
+				 								<sub>night</sub>
+				 							</span>
+				 						</div>
+				 						<ul class="retail-meta">
+				 							<li>Inc. Breakfast</li>
+				 							<li>Private Balcony</li>
+				 							<li>Sea View</li>
+				 							<li>Free Wi-Fi</li>
+				 							<li>Bathroom</li>
+				 							<li>Water Heated Pool</li>
+				 						</ul>
+				 					</figcaption>
+				 				</figure>
+				 				<button>Book Now!</button>
+				 			</div>
+				 			<!--PRICE TAG EN-->
+				 		</div>
+				 		<div class="col-md-4 col-sm-4">
+				 			<!--PRICE TAG START-->
+				 			<div class="kf-price-tag">
+				 				<div class="price-tag-heading">
+				 					<h5>comfort Room</h5>
+				 					<p>Special Services</p>
+				 				</div>
+				 				<figure>
+				 					<img src="extra-images/price-tag.jpg" alt=""/>
+				 					<figcaption>
+				 						<div class="retail">
+				 							<span>
+				 								<sup>$</sup>
+				 								199
+				 								<sub>night</sub>
+				 							</span>
+				 						</div>
+				 						<ul class="retail-meta">
+				 							<li>Inc. Breakfast</li>
+				 							<li>Private Balcony</li>
+				 							<li>Sea View</li>
+				 							<li>Free Wi-Fi</li>
+				 							<li>Bathroom</li>
+				 							<li>Water Heated Pool</li>
+				 						</ul>
+				 					</figcaption>
+				 				</figure>
+				 				<button>Book Now!</button>
+				 			</div>
+				 			<!--PRICE TAG EN-->
+				 		</div>
+				 		<div class="col-md-4 col-sm-4">
+				 			<!--PRICE TAG START-->
+				 			<div class="kf-price-tag">
+				 				<div class="price-tag-heading">
+				 					<h5>Deluxe Room</h5>
+				 					<p>Special Services</p>
+				 				</div>
+				 				<figure>
+				 					<img src="extra-images/price-tag.jpg" alt=""/>
+				 					<figcaption>
+				 						<div class="retail">
+				 							<span>
+				 								<sup>$</sup>
+				 								99
+				 								<sub>night</sub>
+				 							</span>
+				 						</div>
+				 						<ul class="retail-meta">
+				 							<li>Inc. Breakfast</li>
+				 							<li>Private Balcony</li>
+				 							<li>Sea View</li>
+				 							<li>Free Wi-Fi</li>
+				 							<li>Bathroom</li>
+				 							<li>Water Heated Pool</li>
+				 						</ul>
+				 					</figcaption>
+				 				</figure>
+				 				<button>Book Now!</button>
+				 			</div>
+				 			<!--PRICE TAG EN-->
+				 		</div>
+					</div>
+				</div>
+			</section>
+			<!--PRICEING  SECTION END-->
+			<div class="kf-brand-partner">
+				<div class="container">
+					<span class="brand-info">Trusted by more than more than <b>10,000</b> people and orgizations all over the <b>world</b></span>
+					<div class="row">
+						<div id="owl-demo-4" class="owl-carousel owl-theme">
+							<div class="item">
+								<figure><img src="extra-images/brand-1.png" alt=""/></figure>
+							</div>
+							<div class="item">
+								<figure><img src="extra-images/brand-2.png" alt=""/></figure>
+							</div>
+							<div class="item">
+								<figure><img src="extra-images/brand-3.png" alt=""/></figure>
+							</div>
+							<div class="item">
+								<figure><img src="extra-images/brand-4.png" alt=""/></figure>
+							</div>
+							<div class="item">
+								<figure><img src="extra-images/brand-5.png" alt=""/></figure>
+							</div>
+							<div class="item">
+								<figure><img src="extra-images/brand-6.png" alt=""/></figure>
+							</div>
+							<div class="item">
+								<figure><img src="extra-images/brand-1.png" alt=""/></figure>
+							</div>
+							<div class="item">
+								<figure><img src="extra-images/brand-2.png" alt=""/></figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--EDU2 FOOTER WRAP START-->
+		<!--NEWS LETTERS START-->
+
+		<!--NEWS LETTERS END-->
+		<!--FOOTER START-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="widget">
+							<h5>About Hotel</h5>
+							<div class="text">
+								<p>Etiam pharetra erat sed fermentum feugiat  velit mauri s egestas quam fermentum feugiat velit mauris. </p>
+								<h5>Subcribe</h5>
+								<form>
+									<input type="text" placeholder="Info@info.com">
+									<button><i class="fa fa-envelope"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget widget-twitter">
+							<h5>Latest Tweets</h5>
+							<ul>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<p>Etiam pharetra erat sed fermentum feugiat  velit mauri s egestas quam fermentum feugiat velit mauris. </p>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<p>Etiam pharetra erat sed fermentum feugiat  velit mauri s egestas quam fermentum feugiat velit mauris. </p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="widget widget-instagram">
+							<h5>Instagram</h5>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb1.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb2.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb3.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb4.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb5.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb6.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb7.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="extra-images/ft-thumb8.jpg" alt="">
+										<i class="fa fa-search"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--COPYRIGHTS START-->
+				<div class="kf_copyright_wrap">
+					
+					<ul class="kf-footer-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Packages</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+
+					<ul class="kf-footer-social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype"></i></a></li>
+					</ul>
+				</div>
+				<!--COPYRIGHTS START-->
+			</div>
+			
+		</footer>
+		<!--FOOTER END-->
+		
+    </div>
+    <!--KF KODE WRAPPER WRAP END-->
+	<!--Bootstrap core JavaScript-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Map-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="js/jquery-filterable.js"></script>
+	<!--Accordian JavaScript-->
+	<script src="js/jquery.accordion.js"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="js/waypoints-min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- include Masonry -->
+	<script src="js/isotope.pkgd.min.js"></script> 
+	<script src="js/jquery.selectric.min.js"></script>	
+	<!--Dl Menu Script-->
+	<script src="js/dl-menu/modernizr.custom.js"></script>
+	<!--Dl Menu Script-->
+	<script src="js/dl-menu/jquery.dlmenu.js"></script>
+	<!--Custom JavaScript-->
+	<script src="js/custom.js"></script>
+	
+
+    
+</body>
+</html>
